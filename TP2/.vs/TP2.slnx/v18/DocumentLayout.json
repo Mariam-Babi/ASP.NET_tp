@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Producers\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96452C1-0960-4C9C-861F-C003FB83EB59}|TP2.csproj|c:\\users\\marie\\onedrive\\bureau\\tp1\\tp2\\controllers\\producerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96452C1-0960-4C9C-861F-C003FB83EB59}|TP2.csproj|solutionrelative:controllers\\producerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Producers\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Producers\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Producers\\Details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Producers\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96452C1-0960-4C9C-861F-C003FB83EB59}|TP2.csproj|c:\\users\\marie\\onedrive\\bureau\\tp1\\tp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96452C1-0960-4C9C-861F-C003FB83EB59}|TP2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96452C1-0960-4C9C-861F-C003FB83EB59}|TP2.csproj|c:\\users\\marie\\onedrive\\bureau\\tp1\\tp2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D96452C1-0960-4C9C-861F-C003FB83EB59}|TP2.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Models\\Cinema\\CinemaDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Cinema\\CinemaDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producers\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Producers\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T20:46:05.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Producers\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T20:45:21.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Create.cshtml",
+              "RelativeToolTip": "Views\\Producers\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T20:44:37.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProducersController.cs",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Controllers\\ProducersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProducersController.cs",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Controllers\\ProducersController.cs",
+              "RelativeToolTip": "Controllers\\ProducersController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswDgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T20:32:51.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producers\\Details.cshtml",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Details.cshtml",
+              "RelativeToolTip": "Views\\Producers\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T20:43:54.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Views\\Producers\\Index.cshtml",
+              "RelativeToolTip": "Views\\Producers\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-03T20:43:07.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T19:22:07.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-03T16:17:09.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CinemaDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Models\\Cinema\\CinemaDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\Cinema\\CinemaDbContext.cs",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Bureau\\tp1\\TP2\\Models\\Cinema\\CinemaDbContext.cs",
+              "RelativeToolTip": "Models\\Cinema\\CinemaDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T19:18:39.782Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
