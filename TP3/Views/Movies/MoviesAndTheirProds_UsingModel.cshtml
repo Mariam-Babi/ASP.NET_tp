@@ -1,0 +1,29 @@
+@model IEnumerable<CinemaManager.Models.Cinema.ProdMovie>
+@{
+    ViewData["Title"] = "Films et Producteurs (ViewModel)";
+}
+
+<h2>Films et leurs Producteurs (via ViewModel)</h2>
+<p><a asp-action="Index">Retour à la liste</a></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titre du Film</th>
+            <th>Genre</th>
+            <th>Nom du Producteur</th>
+            <th>Nationalité du Producteur</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.mTitle</td>
+                <td>@item.mGenre</td>
+                <td>@item.pName</td>
+                <td>@item.pNat</td>
+            </tr>
+        }
+    </tbody>
+</table>

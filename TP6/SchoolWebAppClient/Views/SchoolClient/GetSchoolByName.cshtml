@@ -1,0 +1,33 @@
+@model IEnumerable<SchoolWebAppClient.Models.SchoolClient>
+
+@{
+    ViewData["Title"] = "Résultats de la recherche";
+}
+
+<h2>Résultats de la recherche</h2>
+
+<a asp-action="GetAllSchools">Retour à la liste</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Sections</th>
+            <th>Directeur</th>
+            <th>Note</th>
+            <th>Site Web</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Sections</td>
+                <td>@item.Director</td>
+                <td>@item.Rating</td>
+                <td>@item.WebSite</td>
+            </tr>
+        }
+    </tbody>
+</table>

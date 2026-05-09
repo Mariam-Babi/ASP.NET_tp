@@ -1,0 +1,22 @@
+@model SchoolWebAppClient.Models.SchoolClient
+
+@{
+    ViewData["Title"] = "Détails de l'école";
+}
+
+<h2>Détails de l'école</h2>
+
+<dl>
+    <dt>Nom</dt>
+    <dd>@Model.Name</dd>
+    <dt>Sections</dt>
+    <dd>@Model.Sections</dd>
+    <dt>Directeur</dt>
+    <dd>@Model.Director</dd>
+    <dt>Note</dt>
+    <dd>@Model.Rating</dd>
+    <dt>Site Web</dt>
+    <dd>@Model.WebSite</dd>
+</dl>
+
+<a asp-action="GetAllSchools">Retour à la liste</a>

@@ -1,0 +1,33 @@
+@model IEnumerable<CinemaManager.Models.Cinema.Movie>
+@{
+    ViewData["Title"] = "Films";
+}
+
+<h2>Liste des Films</h2>
+<p>
+    <a asp-action="MoviesAndTheirProds">Films avec leurs Producteurs (Navigation)</a> |
+    <a asp-action="MoviesAndTheirProds_UsingModel">Films avec leurs Producteurs (ViewModel)</a> |
+    <a asp-action="SearchByTitle">Recherche par Titre</a> |
+    <a asp-action="SearchByGenre">Recherche par Genre</a> |
+    <a asp-action="SearchBy2">Recherche Avancée</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Genre</th>
+            <th>ID Producteur</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Genre</td>
+                <td>@item.ProducerId</td>
+            </tr>
+        }
+    </tbody>
+</table>

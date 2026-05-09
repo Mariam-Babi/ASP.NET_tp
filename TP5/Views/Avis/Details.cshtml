@@ -1,0 +1,25 @@
+@model RestoManager_X.Models.RestosModel.Avis
+
+@{
+    ViewData["Title"] = "Détails de l'Avis";
+}
+
+<h1>Détails de l'Avis</h1>
+
+<dl class="row">
+    <dt class="col-sm-2">Code Avis</dt>
+    <dd class="col-sm-10">@Model.CodeAvis</dd>
+    <dt class="col-sm-2">Nom Personne</dt>
+    <dd class="col-sm-10">@Model.NomPersonne</dd>
+    <dt class="col-sm-2">Note</dt>
+    <dd class="col-sm-10">@Model.Note / 5</dd>
+    <dt class="col-sm-2">Commentaire</dt>
+    <dd class="col-sm-10">@Model.Commentaire</dd>
+    <dt class="col-sm-2">Restaurant</dt>
+    <dd class="col-sm-10">@Model.LeResto?.NomResto</dd>
+</dl>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CodeAvis">Modifier</a> |
+    <a asp-action="Index">Retour à la liste</a>
+</div>

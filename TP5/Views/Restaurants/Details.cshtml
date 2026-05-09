@@ -1,0 +1,55 @@
+@model RestoManager_X.Models.RestosModel.Restaurant
+
+@{
+    ViewData["Title"] = "Détails du Restaurant";
+}
+
+<h1>Détails du Restaurant</h1>
+
+<dl class="row">
+    <dt class="col-sm-2">Code</dt>
+    <dd class="col-sm-10">@Model.CodeResto</dd>
+    <dt class="col-sm-2">Nom</dt>
+    <dd class="col-sm-10">@Model.NomResto</dd>
+    <dt class="col-sm-2">Spécialité</dt>
+    <dd class="col-sm-10">@Model.Specialite</dd>
+    <dt class="col-sm-2">Ville</dt>
+    <dd class="col-sm-10">@Model.Ville</dd>
+    <dt class="col-sm-2">Téléphone</dt>
+    <dd class="col-sm-10">@Model.Tel</dd>
+    <dt class="col-sm-2">Propriétaire</dt>
+    <dd class="col-sm-10">@Model.LeProprio?.Nom</dd>
+</dl>
+
+<h3>Avis</h3>
+@if (Model.LesAvis != null && Model.LesAvis.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Personne</th>
+                <th>Note</th>
+                <th>Commentaire</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model.LesAvis)
+            {
+                <tr>
+                    <td>@a.NomPersonne</td>
+                    <td>@a.Note</td>
+                    <td>@a.Commentaire</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Aucun avis pour ce restaurant.</p>
+}
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CodeResto">Modifier</a> |
+    <a asp-action="Index">Retour à la liste</a>
+</div>

@@ -1,0 +1,25 @@
+@model Hotellerie_X.Models.HotellerieModel.Appreciation
+
+@{
+    ViewData["Title"] = "Détails de l'Appréciation";
+}
+
+<h1>Détails de l'Appréciation</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.NomPers)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.NomPers)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Commentaire)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Commentaire)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Note)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Note)</dd>
+        <dt class="col-sm-2">Hôtel</dt>
+        <dd class="col-sm-10">@Model.Hotel?.Nom</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Modifier</a> |
+    <a asp-action="Index">Retour à la liste</a>
+</div>

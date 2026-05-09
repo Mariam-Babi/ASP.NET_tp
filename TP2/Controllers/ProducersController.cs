@@ -66,5 +66,24 @@ namespace CinemaManager.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+        public IActionResult ProdsAndTheirMovies()
+        {
+            var producers = _context.Producers.Include(p => p.Movies).ToList();
+            return View(producers);
+        }
+        public IActionResult ProdsAndTheirMovies_UsingModel()
+        {
+            var result = from p in _context.Producers
+                         join m in _context.Movies
+                         on p.Id equals m.ProducerId
+                         select new ProdMovie
+                         {
+                             pName = p.Name,
+                             pNat = p.Nationality,
+                             mTitle = m.Title,
+                             mGenre = m.Genre
+                         };
+            return View(result.ToList());
+        }
     }
 }

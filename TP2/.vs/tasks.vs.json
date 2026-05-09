@@ -1,0 +1,20 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-MoviesAndTheirProds",
+      "appliesTo": "Views/Movies/MoviesAndTheirProds.cshtml",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-MoviesAnsTheirProds",
+      "appliesTo": "Views/Movies/MoviesAnsTheirProds.cshtml",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-Index",
+      "appliesTo": "Views/Movies/Index.cshtml",
+      "type": "launch"
+    }
+  ]
+}

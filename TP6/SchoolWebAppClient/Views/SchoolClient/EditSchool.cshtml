@@ -1,0 +1,34 @@
+@model SchoolWebAppClient.Models.SchoolClient
+
+@{
+    ViewData["Title"] = "Modifier une école";
+}
+
+<h2>Modifier une école</h2>
+
+<form asp-action="EditSchool" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label asp-for="Name">Nom</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Sections">Sections</label>
+        <input asp-for="Sections" />
+    </div>
+    <div>
+        <label asp-for="Director">Directeur</label>
+        <input asp-for="Director" />
+    </div>
+    <div>
+        <label asp-for="Rating">Note</label>
+        <input asp-for="Rating" />
+    </div>
+    <div>
+        <label asp-for="WebSite">Site Web</label>
+        <input asp-for="WebSite" />
+    </div>
+    <button type="submit">Enregistrer</button>
+</form>
+
+<a asp-action="GetAllSchools">Retour à la liste</a>

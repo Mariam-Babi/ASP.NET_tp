@@ -1,0 +1,49 @@
+@model RestoManager_X.Models.RestosModel.Restaurant
+
+@{
+    ViewData["Title"] = "Ajouter un Restaurant";
+}
+
+<h1>Ajouter un Restaurant</h1>
+<p><em>La spécialité sera automatiquement définie à "Tunisienne" et pourra être modifiée ultérieurement.</em></p>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CodeResto" class="control-label">Code Restaurant</label>
+                <input asp-for="CodeResto" class="form-control" />
+                <span asp-validation-for="CodeResto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomResto" class="control-label">Nom</label>
+                <input asp-for="NomResto" class="form-control" />
+                <span asp-validation-for="NomResto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ville" class="control-label">Ville</label>
+                <input asp-for="Ville" class="form-control" />
+                <span asp-validation-for="Ville" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tel" class="control-label">Téléphone</label>
+                <input asp-for="Tel" class="form-control" />
+                <span asp-validation-for="Tel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumProp" class="control-label">Propriétaire</label>
+                <select asp-for="NumProp" class="form-control" asp-items="ViewBag.NumProp"></select>
+                <span asp-validation-for="NumProp" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Créer" class="btn btn-primary" />
+                <a asp-action="Index">Retour à la liste</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

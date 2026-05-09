@@ -1,0 +1,44 @@
+@model RestoManager_X.Models.RestosModel.Avis
+
+@{
+    ViewData["Title"] = "Modifier l'Avis";
+}
+
+<h1>Modifier l'Avis</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CodeAvis" />
+            <div class="form-group">
+                <label asp-for="NomPersonne" class="control-label">Nom Personne</label>
+                <input asp-for="NomPersonne" class="form-control" />
+                <span asp-validation-for="NomPersonne" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Note" class="control-label">Note (1-5)</label>
+                <input asp-for="Note" class="form-control" />
+                <span asp-validation-for="Note" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Commentaire" class="control-label">Commentaire</label>
+                <textarea asp-for="Commentaire" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Commentaire" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumResto" class="control-label">Restaurant</label>
+                <select asp-for="NumResto" class="form-control" asp-items="ViewBag.NumResto"></select>
+                <span asp-validation-for="NumResto" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Sauvegarder" class="btn btn-primary" />
+                <a asp-action="Index">Retour à la liste</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

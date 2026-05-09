@@ -1,0 +1,33 @@
+@model SchoolWebAppClient.Models.SchoolClient
+
+@{
+    ViewData["Title"] = "Ajouter une école";
+}
+
+<h2>Ajouter une école</h2>
+
+<form asp-action="CreateSchool" method="post">
+    <div>
+        <label asp-for="Name">Nom</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Sections">Sections</label>
+        <input asp-for="Sections" />
+    </div>
+    <div>
+        <label asp-for="Director">Directeur</label>
+        <input asp-for="Director" />
+    </div>
+    <div>
+        <label asp-for="Rating">Note</label>
+        <input asp-for="Rating" />
+    </div>
+    <div>
+        <label asp-for="WebSite">Site Web</label>
+        <input asp-for="WebSite" />
+    </div>
+    <button type="submit">Créer</button>
+</form>
+
+<a asp-action="GetAllSchools">Retour à la liste</a>

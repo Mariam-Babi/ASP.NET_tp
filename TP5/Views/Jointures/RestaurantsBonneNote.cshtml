@@ -1,0 +1,42 @@
+@model IEnumerable<RestoManager_X.Models.RestosModel.Restaurant>
+
+@{
+    ViewData["Title"] = "Restaurants avec Note Moyenne >= 3.5";
+}
+
+<h1>Restaurants bien notés</h1>
+<p><em>Requête LINQ — restaurants ayant une note moyenne &gt;= 3,5</em></p>
+<p><a asp-controller="Proprietaires" asp-action="Index">Retour à l'accueil</a></p>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Nom</th>
+                <th>Ville</th>
+                <th>Spécialité</th>
+                <th>Note Moyenne</th>
+                <th>Nb Avis</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Data)
+            {
+                <tr>
+                    <td>@item.CodeResto</td>
+                    <td>@item.NomResto</td>
+                    <td>@item.Ville</td>
+                    <td>@item.Specialite</td>
+                    <td><strong>@item.Moyenne / 5</strong></td>
+                    <td>@item.NbAvis</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p class="text-muted">Aucun restaurant ne satisfait ce critère pour le moment.</p>
+}

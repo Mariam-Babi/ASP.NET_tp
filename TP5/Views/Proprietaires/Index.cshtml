@@ -1,0 +1,47 @@
+@model IEnumerable<RestoManager_X.Models.RestosModel.Proprietaire>
+
+@{
+    ViewData["Title"] = "Liste des Propriétaires";
+}
+
+<h1>Liste des Propriétaires</h1>
+
+<p>
+    <a asp-action="Create">Ajouter un propriétaire</a>
+    &nbsp;|&nbsp;
+    <a asp-controller="Restaurants" asp-action="Index">Voir les Restaurants</a>
+    &nbsp;|&nbsp;
+    <a asp-controller="Jointures" asp-action="AvisParRestaurant">Avis par Restaurant</a>
+    &nbsp;|&nbsp;
+    <a asp-controller="Jointures" asp-action="AvisParCode">Avis par Code</a>
+    &nbsp;|&nbsp;
+    <a asp-controller="Jointures" asp-action="RestaurantsBonneNote">Restaurants Note &gt;= 3.5</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numéro</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>GSM</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Numero</td>
+                <td>@item.Nom</td>
+                <td>@item.Email</td>
+                <td>@item.Gsm</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Numero">Modifier</a> |
+                    <a asp-action="Details" asp-route-id="@item.Numero">Détails</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Numero">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

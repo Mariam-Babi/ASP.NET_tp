@@ -1,0 +1,41 @@
+@model IEnumerable<Hotellerie_X.Models.HotellerieModel.Appreciation>
+
+@{
+    ViewData["Title"] = "Liste des Appréciations";
+}
+
+<h1>Liste des Appréciations</h1>
+
+<p>
+    <a asp-action="Create">Ajouter une appréciation</a>
+    &nbsp;|&nbsp;
+    <a asp-controller="Hotels" asp-action="Index">Retour aux Hôtels</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.NomPers)</th>
+            <th>@Html.DisplayNameFor(model => model.Commentaire)</th>
+            <th>@Html.DisplayNameFor(model => model.Note)</th>
+            <th>Hôtel</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.NomPers)</td>
+                <td>@Html.DisplayFor(modelItem => item.Commentaire)</td>
+                <td>@Html.DisplayFor(modelItem => item.Note)</td>
+                <td>@item.Hotel?.Nom</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Modifier</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Détails</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

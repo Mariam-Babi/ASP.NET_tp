@@ -1,0 +1,53 @@
+@model RestoManager_X.Models.RestosModel.Proprietaire
+
+@{
+    ViewData["Title"] = "Détails du Propriétaire";
+}
+
+<h1>Détails du Propriétaire</h1>
+
+<dl class="row">
+    <dt class="col-sm-2">Numéro</dt>
+    <dd class="col-sm-10">@Model.Numero</dd>
+    <dt class="col-sm-2">Nom</dt>
+    <dd class="col-sm-10">@Model.Nom</dd>
+    <dt class="col-sm-2">Email</dt>
+    <dd class="col-sm-10">@Model.Email</dd>
+    <dt class="col-sm-2">GSM</dt>
+    <dd class="col-sm-10">@Model.Gsm</dd>
+</dl>
+
+<h3>Restaurants de ce propriétaire</h3>
+@if (Model.LesRestos != null && Model.LesRestos.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Nom</th>
+                <th>Ville</th>
+                <th>Spécialité</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in Model.LesRestos)
+            {
+                <tr>
+                    <td>@r.CodeResto</td>
+                    <td>@r.NomResto</td>
+                    <td>@r.Ville</td>
+                    <td>@r.Specialite</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Aucun restaurant pour ce propriétaire.</p>
+}
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Numero">Modifier</a> |
+    <a asp-action="Index">Retour à la liste</a>
+</div>

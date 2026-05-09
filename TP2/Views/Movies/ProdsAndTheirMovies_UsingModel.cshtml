@@ -1,0 +1,30 @@
+@model IEnumerable<CinemaManager.Models.Cinema.ProdMovie>
+
+<h2>Producteurs et Films (ViewModel)</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producteur</th>
+            <th>Nationalité</th>
+            <th>Titre</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.pName</td>
+                <td>@item.pNat</td>
+                <td>@item.mTitle</td>
+                <td>@item.mGenre</td>
+            </tr>
+        }
+        <td>
+    <a asp-controller="Movies" asp-action="MyMovies" asp-route-id="@/* vous devez avoir l'id ici */">
+        @item.pName
+    </a>
+</td>
+    </tbody>
+</table>

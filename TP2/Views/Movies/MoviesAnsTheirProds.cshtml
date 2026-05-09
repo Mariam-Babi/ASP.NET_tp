@@ -1,0 +1,25 @@
+@model IEnumerable<CinemaManager.Models.Cinema.Movie>
+
+<h2>Films et leurs Producteurs</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titre du film</th>
+            <th>Genre</th>
+            <th>Nom du producteur</th>
+            <th>Nationalité du producteur</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Genre</td>
+                <td>@item.Producer?.Name</td>
+                <td>@item.Producer?.Nationality</td>
+            </tr>
+        }
+    </tbody>
+</table>

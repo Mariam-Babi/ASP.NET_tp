@@ -1,0 +1,46 @@
+@model IEnumerable<SchoolWebAppClient.Models.SchoolClient>
+
+@{
+    ViewData["Title"] = "Liste des écoles";
+}
+
+<h2>Liste des écoles</h2>
+
+<p>
+    <a asp-action="CreateSchool">Ajouter une école</a>
+</p>
+
+<form asp-action="GetSchoolByName" method="get">
+    <input type="text" name="name" placeholder="Rechercher par nom" />
+    <button type="submit">Rechercher</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Sections</th>
+            <th>Directeur</th>
+            <th>Note</th>
+            <th>Site Web</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Sections</td>
+                <td>@item.Director</td>
+                <td>@item.Rating</td>
+                <td>@item.WebSite</td>
+                <td>
+                    <a asp-action="GetSchoolById" asp-route-id="@item.Id">Détails</a>
+                    <a asp-action="EditSchool" asp-route-id="@item.Id">Modifier</a>
+                    <a asp-action="DeleteSchool" asp-route-id="@item.Id">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

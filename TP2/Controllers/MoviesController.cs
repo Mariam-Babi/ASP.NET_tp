@@ -17,7 +17,12 @@ namespace TP2.Controllers
         {
             _context = context;
         }
-
+        public IActionResult MoviesAndTheirProds()
+        {
+            
+            var movies = _context.Movies.Include(m => m.Producer).ToList();
+            return View(movies);
+        }
         // GET: Movies
         public async Task<IActionResult> Index()
         {
@@ -50,7 +55,35 @@ namespace TP2.Controllers
             ViewData["ProducerId"] = new SelectList(_context.Producers, "Id", "Id");
             return View();
         }
-
+        public IActionResult MoviesAndTheirProds_UsingModel()
+        {
+            var result = from m in _context.Movies
+                         join p in _context.Producers
+                         on m.ProducerId equals p.Id
+                         select new ProdMovie
+                         {
+                             mTitle = m.Title,
+                             mGenre = m.Genre,
+                             pName = p.Name,
+                             pNat = p.Nationality
+                         };
+            return View(result.ToList());
+        }
+        public IActionResult MyMovies(int id)
+        {
+            var result = from m in _context.Movies
+                         join p in _context.Producers
+                         on m.ProducerId equals p.Id
+                         where p.Id == id
+                         select new ProdMovie
+                         {
+                             mTitle = m.Title,
+                             mGenre = m.Genre,
+                             pName = p.Name,
+                             pNat = p.Nationality
+                         };
+            return View(result.ToList());
+        }
         // POST: Movies/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -154,7 +187,7 @@ namespace TP2.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        
         private bool MovieExists(int id)
         {
             return _context.Movies.Any(e => e.Id == id);

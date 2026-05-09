@@ -1,0 +1,43 @@
+@model IEnumerable<RestoManager_X.Models.RestosModel.Avis>
+
+@{
+    ViewData["Title"] = "Liste des Avis";
+}
+
+<h1>Liste des Avis</h1>
+
+<p>
+    <a asp-action="Create">Ajouter un avis</a>
+    &nbsp;|&nbsp;
+    <a asp-controller="Restaurants" asp-action="Index">Retour aux Restaurants</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Nom Personne</th>
+            <th>Note</th>
+            <th>Commentaire</th>
+            <th>Restaurant</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CodeAvis</td>
+                <td>@item.NomPersonne</td>
+                <td>@item.Note</td>
+                <td>@item.Commentaire</td>
+                <td>@item.LeResto?.NomResto</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CodeAvis">Modifier</a> |
+                    <a asp-action="Details" asp-route-id="@item.CodeAvis">Détails</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CodeAvis">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

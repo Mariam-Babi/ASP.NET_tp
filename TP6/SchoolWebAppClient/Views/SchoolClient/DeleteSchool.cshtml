@@ -1,0 +1,27 @@
+@model SchoolWebAppClient.Models.SchoolClient
+
+@{
+    ViewData["Title"] = "Supprimer une école";
+}
+
+<h2>Supprimer une école</h2>
+
+<p>Voulez-vous vraiment supprimer cette école ?</p>
+
+<dl>
+    <dt>Nom</dt>
+    <dd>@Model.Name</dd>
+    <dt>Sections</dt>
+    <dd>@Model.Sections</dd>
+    <dt>Directeur</dt>
+    <dd>@Model.Director</dd>
+    <dt>Note</dt>
+    <dd>@Model.Rating</dd>
+</dl>
+
+<form asp-action="DeleteSchool" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Confirmer la suppression</button>
+</form>
+
+<a asp-action="GetAllSchools">Annuler</a>
